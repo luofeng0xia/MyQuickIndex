@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="weixi.example.com.myquickindex.MainActivity">
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+    <weixi.example.com.myquickindex.ui.QuickIndexBar
+        android:id="@+id/index"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:background="#ff0000"/>
+    <TextView
+        android:visibility="gone"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:id="@+id/popIcon"
+        android:text="A"
+        android:textSize="48sp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:background="@drawable/popiconbg"
+        android:textColor="@android:color/white"/>
+</RelativeLayout>
